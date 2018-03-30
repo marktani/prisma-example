@@ -1,0 +1,27 @@
+query parents {
+  selves(where: {
+    parent: null
+  }) {
+    title
+  }
+}
+
+query allChildren {
+  selves(where: {
+    parent: {
+      id_not: ""
+    }
+  }) {
+    title
+  }
+}
+
+query specificChildren {
+    selves(where: {
+    parent: {
+      title: "A"
+    }
+  }) {
+    title
+  }
+}

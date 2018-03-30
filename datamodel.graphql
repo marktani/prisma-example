@@ -1,0 +1,11 @@
+type User {
+  id: ID! @unique
+  name: String!
+}
+
+type Self {
+  id: ID! @unique
+  title: String
+  parent: Self @relation(name: "SelfOnSelf")
+  children: [Self!]! @relation(name: "SelfOnSelf")
+}
