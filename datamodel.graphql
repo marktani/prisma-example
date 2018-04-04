@@ -9,3 +9,16 @@ type Self {
   parent: Self @relation(name: "SelfOnSelf")
   children: [Self!]! @relation(name: "SelfOnSelf")
 }
+
+type SetEnum2182 {
+  challengeDescription: String!
+  challengeIdentifier: String!
+  tags: [Tag!]!
+  points: Int!
+}
+
+enum Tag {
+  A,
+  B,
+  C
+}
