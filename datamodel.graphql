@@ -17,6 +17,12 @@ type SetEnum2182 {
   points: Int!
 }
 
+type AllTypes {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
 enum Tag {
   A,
   B,
