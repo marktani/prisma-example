@@ -21,6 +21,13 @@ type AllTypes {
   id: ID! @unique
   createdAt: DateTime!
   updatedAt: DateTime!
+
+}
+
+type AllRelations {
+  id: ID! @unique
+  key: String!
+  allType: AllTypes!
 }
 
 enum Tag {
