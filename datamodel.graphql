@@ -28,7 +28,7 @@ type AllTypes {
   id: ID! @unique
   createdAt: DateTime!
   updatedAt: DateTime!
-
+  strings: [String!]!
 }
 
 type AllRelations {
