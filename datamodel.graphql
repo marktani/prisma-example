@@ -24,11 +24,15 @@ type SetEnum2182 {
   points: Int!
 }
 
+type StringArray {
+  id: ID! @unique
+  strings: [String!]!
+}
+
 type AllTypes {
   id: ID! @unique
   createdAt: DateTime!
   updatedAt: DateTime!
-  strings: [String!]!
 }
 
 type AllRelations {
