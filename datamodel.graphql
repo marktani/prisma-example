@@ -10,6 +10,13 @@ type Self {
   children: [Self!]! @relation(name: "SelfOnSelf")
 }
 
+type Unique {
+  id: ID! @unique
+  string: String! @unique
+  int: Int! @unique
+  boolean: Boolean @unique
+}
+
 type SetEnum2182 {
   challengeDescription: String!
   challengeIdentifier: String!
