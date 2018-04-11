@@ -41,6 +41,11 @@ type AllRelations {
   allType: AllTypes!
 }
 
+type MyDateTime {
+  id: ID! @unique
+  time: DateTime!
+}
+
 enum Tag {
   A,
   B,
